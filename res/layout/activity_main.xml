@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity" >"
+
+	"
+
+    <AnalogClock
+        android:id="@+id/analogClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/bafter"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+    	android:drawableLeft="@drawable/stopclock"
+        android:text = "@string/safter"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/bmeeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bat"
+        android:layout_alignRight="@+id/bat"
+        android:layout_below="@+id/bat"
+        android:text="@string/smeeting"
+        android:drawableLeft="@drawable/meeting"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/bat"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bafter"
+        android:layout_alignRight="@+id/bafter"
+        android:layout_below="@+id/bafter"
+        android:drawableLeft="@drawable/clock"
+        android:text="@string/sat"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/bschedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bmeeting"
+        android:layout_alignRight="@+id/bmeeting"
+        android:layout_below="@+id/bmeeting"
+        android:text="@string/sschedule"
+        android:drawableLeft="@drawable/schedule"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
